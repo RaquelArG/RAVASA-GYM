@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RAVASA Gym. Gimnasio ubicado en Sucre de Ciudad Quesada, San Carlos, Costa Rica. Ofrecemos GYM, Spinning y Funcionales" />
+  <title>RAVASA Gym</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+
+  <link rel="icon" href="assets/logo.webp" type="image/webp" />
+</head>
+
+<body>
+
+  <!-- ==============================
+       HEADER / NAVEGACIÓN
+  ============================== -->
+  <header id="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Navegación principal">
+
+        <a href="#" class="nav-logo" aria-label="Inicio">
+          
+          <img src="assets/logo.webp" alt="Logo del Gimnasio" width="48" height="48" />
+          <div class="logo-text">
+            <span class="logo-name">RAVASA Gym</span>
+            <span class="logo-tagline">Más que un gimnasio</span>
+          </div>
+        
+
+        <!-- Links principales -->
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#schedule">Horarios</a></li>
+          <li><a href="#routines">Rutinas</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+
+        <!-- Acciones -->
+          <div class="nav-actions">
+            <div class="font-size-controls" role="group" aria-label="Controles de tamaño de texto">
+            <button class="font-size-btn font-size-decrease" id="font-decrease" aria-label="Disminuir tamaño de texto" title="Texto más pequeño">A−</button>
+            <button class="font-size-btn font-size-reset" id="font-reset" aria-label="Restablecer tamaño de texto a normal" title="Tamaño normal">A</button>
+            <button class="font-size-btn font-size-increase" id="font-increase" aria-label="Aumentar tamaño de texto" title="Texto más grande">A+</button>
+          </div>
+          <button class="theme-toggle" id="theme-btn" aria-label="Cambiar modo claro/oscuro" title="Cambiar tema">🌙</button>
+          <a href="https://wa.me/50688006274" class="btn btn-primary" aria-label="Contactar por WhatsApp">Inscríbete</a>
+          <button class="menu-toggle" id="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- ==============================
+         HERO – VIDEO DE FONDO
+    ============================== -->
+    <section id="hero" aria-label="Bienvenida al gimnasio">
+
+      <div class="hero-video-wrapper" aria-hidden="true">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          aria-hidden="true"
+          poster="assets/hero-poster.jpg"
+        >
+          <source src="assets/hero-video.mp4" type="video/mp4" />
+        </video>
+        <!-- Fallback si no hay video -->
+        <div class="hero-video-fallback"></div>
+      </div>
+
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <span class="hero-eyebrow">Tu mejor versión comienza aquí</span>
+
+        <h1 class="hero-title">
+          Rompe
+          <span class="highlight">tus límites</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Bienvenido al lugar más feliz del mundo donde somos más que un gimnasio, somos una manera de vivir.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#routines" class="btn btn-primary">Ver rutinas</a>
+          <a href="#contact" class="btn btn-outline">Contáctanos</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        Descubre más
+        <span></span>
+      </div>
+
+    </section>
+
+
+    <!-- ==============================
+         FRANJA SLOGAN (MARQUEE)
+    ============================== -->
+    <div class="slogan-strip" aria-hidden="true">
+      <div class="slogan-track">
+        <!-- Se duplican los ítems para el efecto continuo -->
+  
+        <span class="slogan-item">GYM</span>
+        <span class="slogan-item">Funcionales</span>
+        <span class="slogan-item">Spinning</span>
+        <span class="slogan-item">Musculación</span>
+        <span class="slogan-item">Plan semi personalizado</span>
+        <span class="slogan-item">GYM</span>
+        <span class="slogan-item">Funcionales</span>
+        <span class="slogan-item">Spinning</span>
+        <span class="slogan-item">Musculación</span>
+        <span class="slogan-item">Plan semi personalizado</span>
+        <span class="slogan-item">GYM</span>
+        <span class="slogan-item">Funcionales</span>
+        <span class="slogan-item">Spinning</span>
+        <span class="slogan-item">Musculación</span>
+      </div>
+    </div>
+
+
+    <!-- ==============================
+         SOBRE NOSOTROS
+    ============================== -->
+    <section id="about" class="section-pad" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-text">
+            <span class="section-label">¿Quiénes somos?</span>
+            <h2 id="about-title">Más que un gimnasio,<br/> <span class="text-accent">una manera de vivir</span></h2>
+
+            <blockquote class="about-phrase">
+              "Bienvenido al lugar más feliz del mundo."
+            </blockquote>
+
+            <p>
+              No somos solo pesas y máquinas. Somos una comunidad que se levanta temprano, que se reta a cada sesión y que celebra cada logro. Nuestros entrenadores están contigo en cada paso, desde el primer día hasta que superes tus propios récords.
+            </p>
+            <p>
+              Con equipos modernos, clases dinámicas y un ambiente que te impulsa a dar el 100%, aquí el límite lo pones tú — y luego lo rompes.
+            </p>
+
+            <div class="about-stats" role="list" aria-label="Estadísticas del gimnasio">
+              <div class="stat-item" role="listitem">
+                <span class="stat-num">+100</span>
+                <span class="stat-label">Miembros activos</span>
+              </div>
+              <div class="stat-item" role="listitem">
+                <span class="stat-num">3</span>
+                <span class="stat-label">Disciplinas</span>
+              </div>
+              <div class="stat-item" role="listitem">
+                <span class="stat-num">5★</span>
+                <span class="stat-label">Calificación</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <img src="assets/logo.webp" alt="Imagen de chica en el gimnasio con el logo del gimnasio de fondo" width="600" height="450"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="about-image-placeholder" style="display:none;" aria-hidden="true">
+              📷 <span>Imagen pendiente</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         SERVICIOS
+    ============================== -->
+    <section id="services" class="section-pad" aria-labelledby="Servicios">
+      <div class="container">
+
+        <div class="services-header">
+          <h2 id="services-title">Nuestros <span class="text-accent">servicios</span></h2>
+          <p>Tres disciplinas diseñadas para que alcances tu máximo potencial, sin importar tu punto de partida.</p>
+        </div>
+
+        <div class="services-list">
+
+          <!-- SERVICIO 1: GYM -->
+          <article class="service-row" aria-labelledby="1. Gym">
+            <div class="service-content">
+              <div class="service-icon" aria-hidden="true">🏋️</div>
+              <h3 id="service-gym-title">GYM</h3>
+              <p>
+                Equipamiento de primera línea para que entrenes a tu ritmo. Contamos con área de pesas libres, máquinas de musculación y zonas funcionales.
+              </p>
+              <p>
+                <em>"El cuerpo que quieres empieza con la decisión de hoy."</em>
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="assets/img-gym.webp" alt="Área de GYM con equipos de musculación" width="600" height="380"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="service-image-placeholder" style="display:none;" aria-hidden="true">
+                🏋️ <span>assets/img-gym.jpg</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- SERVICIO 2: FUNCIONALES -->
+          <article class="service-row reverse" aria-labelledby="Funcionales">
+            <div class="service-content">
+              <div class="service-icon" aria-hidden="true">🔥</div>
+              <h3 id="service-func-title">Funcionales</h3>
+              <p>
+                Cada sesión está diseñada para quemar calorías, fortalecer todo el cuerpo y mejorar tu condición física.
+              </p>
+              <p>
+                <em>"Muévete mejor, vive mejor."</em>
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="assets/img-funcional.webp" alt="Mujer utilizando maquina de ejercicio" width="600" height="380"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="service-image-placeholder" style="display:none;" aria-hidden="true">
+                🔥 <span>assets/img-funcional.jpg</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- SERVICIO 3: SPINNING -->
+          <article class="service-row" aria-labelledby="Spinning">
+            <div class="service-content">
+              <div class="service-icon" aria-hidden="true">🚴</div>
+              <h3 id="service-spin-title">Spinning</h3>
+              <p>
+                Clases de ciclismo que te pone en modo máquina. Quema calorías mientras nuestro instructor te guía al ritmo de la música. Ideal para mejorar tu sistema cardiovascular y liberar el estrés.
+              </p>
+              <p>
+                <em>"Pedalea hacia tu mejor versión."</em>
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="assets/img-spinning.webp" alt="Hombre utilizando una bicicleta de spinning" width="600" height="380"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="service-image-placeholder" style="display:none;" aria-hidden="true">
+                🚴 <span>assets/img-spinning.jpg</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         HORARIOS
+    ============================== -->
+    <section id="schedule" class="section-pad" aria-labelledby="Horarios de atención">
+      <div class="container">
+
+        <div class="schedule-header">
+          <h2 id="schedule-title">Horario de <span class="text-accent">atención</span></h2>
+        </div>
+
+        <div class="schedule-grid" role="list" aria-label="Lunes a viernes de 5:30 am a 11:00 am, 4:00 pm a 9:00 pm. Sabados: 9:00 am a 12:md">
+
+          <div class="schedule-card" role="listitem">
+            <div class="schedule-day">Lunes – Viernes</div>
+            <div class="schedule-time">
+              <div class="time-block">
+                <span class="icon" aria-hidden="true"></span>
+                <span>5:30 AM – 11:00 AM</span>
+              </div>
+              <div class="time-block">
+                <span class="icon" aria-hidden="true"></span>
+                <span>4:00 PM – 9:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-card" role="listitem">
+            <div class="schedule-day">Sábado</div>
+            <div class="schedule-time">
+              <div class="time-block">
+                <span class="icon" aria-hidden="true"></span>
+                <span>9:00 AM – 12:00 MD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-card" role="listitem">
+            <div class="schedule-day">Domingo</div>
+            <div class="schedule-time">
+              <div class="time-block" style="justify-content:center; color:var(--color-text-muted);">
+                <span>Cerrado</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         RUTINAS
+    ============================== -->
+    <section id="routines" class="section-pad" aria-labelledby="Nuestras rutinas">
+      <div class="container">
+        <div class="routines-header">
+          <span class="section-label">Elige tu camino</span>
+          <h2 id="routines-title">Nuestras <span class="text-accent">rutinas</span></h2>
+        </div>
+
+        <div class="routines-grid" role="list" aria-label="Lista de rutinas disponibles">
+
+          <!-- Tarjeta 1 -->
+          <article class="routine-card" role="listitem" aria-labelledby="Gimnasio Musculación">
+            <div class="routine-card-img" aria-hidden="true">🏋️</div>
+            <div class="routine-card-body">
+              <h4 id="r1-title">Gimnasio Musculación</h4>
+              <p>Entrena con pesas libres y máquinas para ganar masa muscular, fuerza y definición.</p>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="routine-card" role="listitem" aria-labelledby="Rutinas Puntuales">
+            <div class="routine-card-img" aria-hidden="true">⚡</div>
+            <div class="routine-card-body">
+              <h4 id="r2-title">Rutinas Puntuales</h4>
+              <p>Sesiones cortas e intensas para días con poco tiempo. Máximo resultado en mínimo tiempo.</p>
+            </div>
+          </article>
+
+          <!-- Tarjeta 3 -->
+          <article class="routine-card" role="listitem" aria-labelledby="Plan Semi Personalizado">
+            <div class="routine-card-img" aria-hidden="true">📋</div>
+            <div class="routine-card-body">
+              <h4 id="r3-title">Plan Semi Personalizado</h4>
+              <p>Un programa adaptado a tus objetivos y nivel, con seguimiento y ajustes periódicos.</p>
+            </div>
+          </article>
+
+          <!-- Tarjeta 4 -->
+          <article class="routine-card" role="listitem" aria-labelledby="Medición Corporal">
+            <div class="routine-card-img" aria-hidden="true">📏</div>
+            <div class="routine-card-body">
+              <h4 id="r4-title">Medición Corporal</h4>
+              <p>Análisis completo de tu composición corporal para conocer tu punto de partida y medir tu progreso.</p>
+            </div>
+          </article>
+
+          <!-- Tarjeta 5 -->
+          <article class="routine-card" role="listitem" aria-labelledby="Clase de Spinning">
+            <div class="routine-card-img" aria-hidden="true">🚴</div>
+            <div class="routine-card-body">
+              <h4 id="r5-title">Clase de Spinning</h4>
+              <p>Sesión de ciclismo con instructor y música. Requiere cita previa.</p>
+            </div>
+          </article>
+
+        </div>
+
+
+    <!-- ==============================
+         GALERÍA
+    ============================== -->
+    <section id="gallery" class="section-pad" aria-labelledby="Fotos del gimnasio y su gente">
+      <div class="container">
+
+        <div class="gallery-header">
+          <span class="section-label">Nuestro espacio</span>
+          <h2 id="gallery-title">Conoce el <span class="text-accent">gimnasio</span></h2>
+          <p style="color:var(--color-text-muted); margin-top:0.75rem;">Un ambiente diseñado para que cada sesión sea una experiencia.</p>
+        </div>
+
+        <!-- CARRUSEL -->
+        <div class="gallery-carousel" aria-label="Carrusel de imágenes del gimnasio" role="region">
+
+          <!-- Flecha izquierda -->
+          <button class="carousel-btn carousel-btn-prev" id="carousel-prev" aria-label="Imagen anterior">
+            &#8592;
+          </button>
+
+          <!-- Ventana visible -->
+          <div class="carousel-window" aria-live="polite" aria-atomic="true">
+            <div class="carousel-track" id="carousel-track">
+
+              <div class="carousel-slide" role="group" aria-label="Imagen 1 de 6">
+                <img src="assets/gallery-1.webp" alt="Foto del gimnasio"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="gallery-item-placeholder" style="display:none;" aria-hidden="true">📷 <span>Imagen pendiente</span></div>
+                <div class="carousel-slide-overlay" aria-hidden="true"><span>🔍</span></div>
+              </div>
+
+              <div class="carousel-slide" role="group" aria-label="Imagen 2 de 6">
+                <img src="assets/gallery-2.webp" alt="Foto del gimnasio"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="gallery-item-placeholder" style="display:none;" aria-hidden="true">📷 <span>Imagen pendiente</span></div>
+                <div class="carousel-slide-overlay" aria-hidden="true"><span>🔍</span></div>
+              </div>
+
+              <div class="carousel-slide" role="group" aria-label="Imagen 3 de 6">
+                <img src="assets/gallery-3.webp" alt="Foto del gimnasio"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="gallery-item-placeholder" style="display:none;" aria-hidden="true">📷 <span>Imagen pendiente</span></div>
+                <div class="carousel-slide-overlay" aria-hidden="true"><span>🔍</span></div>
+              </div>
+
+              <div class="carousel-slide" role="group" aria-label="Imagen 4 de 6">
+                <img src="assets/gallery-4.webp" alt="Foto del gimnasio"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="gallery-item-placeholder" style="display:none;" aria-hidden="true">📷 <span>Imagen pendiente</span></div>
+                <div class="carousel-slide-overlay" aria-hidden="true"><span>🔍</span></div>
+              </div>
+
+              <div class="carousel-slide" role="group" aria-label="Imagen 5 de 6">
+                <img src="assets/gallery-5.webp" alt="Foto del gimnasio"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="gallery-item-placeholder" style="display:none;" aria-hidden="true">📷 <span>Imagen pendiente</span></div>
+                <div class="carousel-slide-overlay" aria-hidden="true"><span>🔍</span></div>
+              </div>
+
+              <div class="carousel-slide" role="group" aria-label="Imagen 6 de 6">
+                <img src="assets/gallery-6.webp" alt="Foto del gimnasio"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="gallery-item-placeholder" style="display:none;" aria-hidden="true">📷 <span>Imagen pendiente</span></div>
+                <div class="carousel-slide-overlay" aria-hidden="true"><span>🔍</span></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Flecha derecha -->
+          <button class="carousel-btn carousel-btn-next" id="carousel-next" aria-label="Imagen siguiente">
+            &#8594;
+          </button>
+
+        </div><!-- /gallery-carousel -->
+
+        <!-- Puntos indicadores -->
+        <div class="carousel-dots" id="carousel-dots" aria-label="Grupos de imágenes" role="tablist"></div>
+
+      </div>
+    </section>
+
+
+    <!-- ==============================
+         CONTACTO
+    ============================== -->
+    <section id="contact" class="section-pad" aria-labelledby="Contacto">
+      <div class="container">
+
+        <div class="contact-inner">
+
+          <div class="contact-text">
+            <span class="section-label">Hablemos</span>
+            <h2 id="contact-title">¿Listo para <span class="text-accent">empezar?</span></h2>
+            <p>
+              Da el primer paso hoy. Escríbenos por WhatsApp o síguenos en Instagram y únete a nuestra comunidad. Estamos aquí para guiarte en cada entrenamiento.
+            </p>
+
+            <div class="contact-channels" role="list" aria-label="Canales de contacto">
+
+              <!-- WhatsApp -->
+              <a
+                href="https://wa.me/50688006274?text=Hola!%20Me%20interesa%20unirme%20al%20gimnasio"
+                class="contact-channel"
+                role="listitem"
+                aria-label="Contactar por WhatsApp: 88006274"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="assets/whatsapp.png" alt="WhatsApp" width="32" height="32">
+                <div class="channel-info">
+                  <strong>WhatsApp</strong>
+                  <span>+506 8800 6274</span>
+                </div>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://instagram.com/ravasagym"
+                class="contact-channel"
+                role="listitem"
+                aria-label="Seguir en Instagram: RAVASA Gym"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="assets/instagram.png" alt="Instagram" width="32" height="32">
+                <div class="channel-info">
+                  <strong>Instagram</strong>
+                  <span>@RAVASA Gym </span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <div class="contact-form-block">
+            <h3>Visitanos en</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.601727603122!2d-84.43318252496508!3d10.281498989838727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa06618f6ef961d%3A0xd850187669f99479!2sSal%C3%B3n%20Comunal%20de%20Sucre!5e1!3m2!1ses-419!2scr!4v1781707307781!5m2!1ses-419!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Marca -->
+        <div class="footer-brand">
+          <div class="logo-name" style="font-family:var(--font-display); font-size:1.8rem; letter-spacing:0.06em; margin-bottom:0.5rem;">
+            RAVASA Gym
+          </div>
+          <div class="footer-social" role="list" aria-label="Reglamento Del Gimnasio">
+         <div class="footer-links">
+               <ul>
+                   <li><a href="reglamento.html">Reglamento Del Gimnasio</a></li>
+               </ul>
+           </div>
+        </nav>
+          </div>
+        </div>
+
+          <nav class="footer-col" aria-label="Links del pie de página">
+            <h4>Navegación</h4>
+            <ul role="list">
+              <li><a href="index.html#about">Nosotros</a></li>
+              <li><a href="index.html#services">Servicios</a></li>
+              <li><a href="index.html#schedule">Horarios</a></li>
+              <li><a href="index.html#routines">Rutinas</a></li>
+              <li><a href="index.html#gallery">Galería</a></li>
+              <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+          </nav>
+
+        <div class="footer-col">
+          <h4>Horarios</h4>
+          <ul role="list">
+            <li style="color:var(--color-text-muted); font-size:0.875rem; line-height:1.8;">Lun – Vie:<br/>5:30 AM – 11:00 AM<br/>4:00 PM – 9:00 PM</li>
+            <li style="color:var(--color-text-muted); font-size:0.875rem; margin-top:0.75rem;">Sáb: 9:00 AM – 12:00 MD</li>
+            <li style="color:var(--color-text-muted); font-size:0.875rem;">Dom: Cerrado</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="footer-year"></span> RAVASA Gym. Todos los derechos reservados.</p>
+        <p>Diseñado con 💛 para quienes rompen sus límites</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
